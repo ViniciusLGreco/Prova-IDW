@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno</title>
+    <link rel="stylesheet" href="/styles/aluno.css">
+</head>
+<body>
+    <header>
+        <h1>Área do Aluno</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="area_aluno.html">Área do Aluno</a></li>
+                <li><a href="area_professor.html">Área do Professor</a></li>
+                <li><a href="menu.html">Formulário</a></li>
+                <li><a href="apresentacao_escola.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="controle">
+            <h2 class="titulo">Painel de Controle do Aluno</h2>
+            <p id="notificacao" class="notificacao"></p><br>
+            <ul>
+                <li>Próxima Prova: Matemática - 10/06/2024</li>
+                <li>Entrega de Trabalho: História - 15/06/2024</li>
+                <li>Reunião de Pais: 20/06/2024</li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="titulo">Calendário Acadêmico</h2>
+            <table id="calendario" class="calendar">
+                <thead>
+                    <tr>
+                        <th>Domingo</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                        <th>Sábado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="task">
+            <h2 class="titulo">Atividades e Tarefas</h2>
+            <label for="filtro">Filtrar por:</label>
+            <select id="filtro">
+                <option value="todos">Todos</option>
+                <option value="matematica">Matemática</option>
+                <option value="historia">História</option>
+                <option value="portugues">Português</option>
+            </select>
+            <ul id="lista-tarefas" class="task-list">
+                <li data-disciplina="matematica">
+                    <span>Matemática:</span> Estudar para a prova - <em>10/06/2024</em>
+                </li>
+                <li data-disciplina="historia">
+                    <span>História:</span> Entrega de trabalho - <em>15/06/2024</em>
+                </li>
+                <li data-disciplina="portugues">
+                    <span>Português:</span> Leitura do livro "Dom Casmurro" - <em>20/06/2024</em>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Escola Aurora</p>
+    </footer>
+    <script src="JS/arealuno.js"></script>
+</body>
+</html>

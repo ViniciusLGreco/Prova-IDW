@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/cadastro.css">
+    <title>Cadastrar-se</title>
+</head>
+<body>
+    <div class="classe">
+        <form id="cadastroForm" class="form">
+            <img class="imagem" src="/imagens/19073761-unidade-de-logotipo-da-matriz-logotipo-do-nome-da-empresa-ficticia-da-matriz-gratis-vetor.jpg" alt="imagem empresa">
+            <label for="campo_nome">Nome:</label>
+            <input type="text" id="campo_nome" name="nome" placeholder="Digite seu nome" required class="campos">
+            <label for="campo_email">E-mail:</label>
+            <input type="email" id="campo_email" name="email" placeholder="Digite seu e-mail" required class="campos">
+            <label for="campo_senha">Senha:</label>
+            <input type="password" id="campo_senha" name="senha" placeholder="Digite sua senha" required class="campos">
+            <label for="campo_senha_confirm">Confirmar senha:</label>
+            <input type="password" id="campo_senha_confirm" name="senha_confirm" placeholder="Digite sua senha novamente" required class="campos">
+            <p id="mensagem-erro" style="color: red; display: none;"></p>
+            <p id="mensagem-sucesso" style="color: green; display: none;">Cadastro realizado com sucesso!</p>
+            <button type="submit" class="botao">Confirmar</button>
+        </form> 
+    </div>    
+
+    <script src="/JS/cadastro.js"></script>
+</body>
+</html>

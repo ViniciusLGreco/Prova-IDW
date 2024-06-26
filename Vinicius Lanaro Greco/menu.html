@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencha o Formulário</title>
+    <link rel="stylesheet" href="/styles/menucss.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="area_aluno.html">Área do Aluno</a></li>
+                <li><a href="area_professor.html">Área do Professor</a></li>
+                <li><a href="menu.html">Formulário</a></li>
+                <li><a href="apresentacao_escola.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Preencha o Formulário</h1>
+        <div class="form-container">
+            <form id="meuFormulario" action="menu.html" method="post">
+                <div class="dados_pessoais">
+                    <h2>Dados pessoais</h2>
+                    <label for="campo_nome">Nome do aluno:</label>
+                    <input type="text" id="campo_nome" name="nome" placeholder="Digite seu nome" required class="campos">
+                    <label for="campo_data">Nascimento:</label>
+                    <input type="date" id="campo_data" name="data_nascimento" required class="campos">
+                    <label for="campo_nome_pai">Nome do Pai:</label>
+                    <input type="text" id="campo_nome_pai" name="nome_pai" placeholder="Digite o nome do pai" required class="campos">
+                    <label for="campo_telefone">Telefone:</label>
+                    <input type="tel" id="campo_telefone" name="telefone" placeholder="Digite o telefone do pai" required class="campos">
+                    <label for="campo_nome_mae">Nome da Mãe:</label>
+                    <input type="text" id="campo_nome_mae" name="nome_mae" placeholder="Digite o nome da mãe" required class="campos">
+                    <label for="campo_telefone">Telefone:</label>
+                    <input type="tel" id="campo_telefone" name="telefone" placeholder="Digite o telefone da mãe" required class="campos">
+                    <label for="campo_email">E-mail:</label>
+                    <input type="email" id="campo_email" name="email" placeholder="Digite seu e-mail" required class="campos">
+                    <label for="campo_cep">CEP:</label>
+                    <input type="text" id="campo_cep" name="cep" placeholder="Digite o CEP" required class="campos">
+                    <label for="campo_rua">Rua:</label>
+                    <input type="text" id="campo_rua" name="rua" placeholder="Rua" required class="campos">
+                    <label for="campo_bairro">Bairro:</label>
+                    <input type="text" id="campo_bairro" name="bairro" placeholder="Bairro" required class="campos">
+                    <label for="campo_numero">Número:</label>
+                    <input type="text" id="campo_numero" name="numero" placeholder="Número" required class="campos">
+                </div>
+                <div class="informacoes_matr">
+                    <h2>Informações de Matrícula</h2>
+                    <label for="opcao">Nível de Ensino:</label>
+                    <select id="opcao" name="nivel_ensino" required class="campos">
+                        <option value="">Escolha uma opção</option>
+                        <option value="Fundamental">Ensino Fundamental</option>
+                        <option value="Medio">Ensino Médio</option>
+                        <option value="Superior">Ensino Superior</option>
+                        <option value="PosGraduado">Pós-Graduado</option>
+                    </select>
+                </div>
+                <div class="turno">
+                    <h3>Turno</h3>
+                    <label for="manha">Manhã</label>
+                    <input type="radio" id="manha" name="turno" value="Manha" required class="radio-input">
+                    <label for="tarde">Tarde</label>
+                    <input type="radio" id="tarde" name="turno" value="Tarde" required class="radio-input">
+                    <label for="noite">Noite</label>
+                    <input type="radio" id="noite" name="turno" value="Noite" required class="radio-input">
+                </div>
+                <div class="ativ_extra">
+                    <h3>Atividades extra curriculares</h3>
+                    <label for="informatica">Informática</label>
+                    <input type="checkbox" id="informatica" name="atividades[]" value="Informatica" class="checkbox-input">
+                    <label for="musica">Música</label>
+                    <input type="checkbox" id="musica" name="atividades[]" value="Musica" class="checkbox-input">
+                    <label for="pintura">Pintura</label>
+                    <input type="checkbox" id="pintura" name="atividades[]" value="Pintura" class="checkbox-input">
+                    <label for="futebol">Futebol</label>
+                    <input type="checkbox" id="futebol" name="atividades[]" value="Futebol" class="checkbox-input">
+                    <label for="volei">Vôlei</label>
+                    <input type="checkbox" id="volei" name="atividades[]" value="Volei" class="checkbox-input">
+                </div>
+                <div class="submit-container">
+                    <button type="submit" class="botao">Enviar Formulário</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Escola Aurora</p>
+    </footer>
+    <script src="JS/menu.js"></script>
+</body>
+</html>
