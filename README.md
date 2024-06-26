@@ -4,7 +4,7 @@ Usuário: usuario@exemplo.com
 
 Senha: senha123
 
-No campo do telefone é necessário colocar 10 caractéres.
+No campo do telefone é necessário colocar 11 caractéres.
 
 *Não há uso de banco de dados e nem API para armazenamento de dados*
 
