@@ -24,4 +24,5 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         return;
     }
     mensagemSucesso.style.display = 'block';
+    window.location.href = 'index.html';
 });
