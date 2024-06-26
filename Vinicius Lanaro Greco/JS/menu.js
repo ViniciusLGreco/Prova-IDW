@@ -63,6 +63,6 @@ function validarEmail(email) {
 
 function validarTelefone(telefone) {
     
-    const re = /^\d{10}$/; 
+    const re = /^\d{11}$/; 
     return re.test(telefone);
 }
